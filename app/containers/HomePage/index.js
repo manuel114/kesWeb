@@ -9,19 +9,39 @@
  * the linting exception.
  */
 
-import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import React, { PureComponent } from 'react';
+import styled from 'styled-components';
+import Heading from './Heading';
+import ContentOne from './ContentOne';
+import ContentTwo from './ContentTwo';
+import ContentThree from './ContentThree';
+
+const BlueDiv = styled.div`
+  background-color: #005b9a;
+`;
 
 /* eslint-disable react/prefer-stateless-function */
-export default class HomePage extends React.PureComponent {
+export default class HomePage extends PureComponent {
   render() {
     return (
-      <div>
-        <h1>
-          <FormattedMessage {...messages.header} />
-        </h1>
-      </div>
+      <>
+        <Heading
+          text={
+            <div>
+              <strong>You</strong> should be in control
+              <br />
+              of <strong>your</strong> data,
+              <br />
+              don&apos;t <strong>you</strong> think?
+            </div>
+          }
+        />
+        <ContentOne />
+        <BlueDiv>
+          <ContentTwo />
+        </BlueDiv>
+        <ContentThree />
+      </>
     );
   }
 }
