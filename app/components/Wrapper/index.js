@@ -69,8 +69,8 @@ class DesktopContainer extends Component {
                     : { fontWeight: '', color: 'white' }
                 }
                 onClick={() => {
-                  this.setState({ activeButton: 'Home' });
-                  history.push('/');
+                  this.setState({ activeButton: 'Team' });
+                  history.push('/team');
                 }}
               />
               <Menu.Item
