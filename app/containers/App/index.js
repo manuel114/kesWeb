@@ -11,6 +11,7 @@ import React, { Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
+import AboutUs from 'containers/AboutUs/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import Wrapper from '../../components/Wrapper';
@@ -24,6 +25,7 @@ export default function App() {
       <Wrapper>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route exact path="/about-us" component={AboutUs} />
           <Route component={NotFoundPage} />
         </Switch>
         <GlobalStyle />
