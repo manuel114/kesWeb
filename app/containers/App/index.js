@@ -10,7 +10,8 @@
 import React, { Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import HomePage from 'containers/HomePage/Loadable';
+import HomePage from 'containers/HomePage';
+import MeetTheTeam from 'containers/MeetTheTeam';
 import AboutUs from 'containers/AboutUs/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
@@ -25,6 +26,7 @@ export default function App() {
       <Wrapper>
         <Switch>
           <Route exact path="/" component={HomePage} />
+          <Route path="/team" component={MeetTheTeam} />
           <Route exact path="/about-us" component={AboutUs} />
           <Route component={NotFoundPage} />
         </Switch>
