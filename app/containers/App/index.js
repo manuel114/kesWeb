@@ -12,6 +12,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage';
 import MeetTheTeam from 'containers/MeetTheTeam';
+import AboutUs from 'containers/AboutUs/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import Wrapper from '../../components/Wrapper';
@@ -26,6 +27,7 @@ export default function App() {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/team" component={MeetTheTeam} />
+          <Route exact path="/about-us" component={AboutUs} />
           <Route component={NotFoundPage} />
         </Switch>
         <GlobalStyle />
