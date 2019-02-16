@@ -51,11 +51,10 @@ class DesktopContainer extends Component {
             >
               <Menu.Item
                 name="Home"
-                style={
-                  this.state.activeButton === 'Home'
-                    ? { fontWeight: 'bold', color: 'white' }
-                    : { fontWeight: '', color: 'white' }
-                }
+                style={{
+                  color: 'white',
+                  fontWeight: this.state.activeButton === 'Home' ? 'bold' : '',
+                }}
                 onClick={() => {
                   this.setState({ activeButton: 'Home' });
                   history.push('/');
@@ -63,11 +62,10 @@ class DesktopContainer extends Component {
               />
               <Menu.Item
                 name="Meet the Team"
-                style={
-                  this.state.activeButton === 'Team'
-                    ? { fontWeight: 'bold', color: 'white' }
-                    : { fontWeight: '', color: 'white' }
-                }
+                style={{
+                  color: 'white',
+                  fontWeight: this.state.activeButton === 'Team' ? 'bold' : '',
+                }}
                 onClick={() => {
                   this.setState({ activeButton: 'Team' });
                   history.push('/team');
@@ -75,11 +73,10 @@ class DesktopContainer extends Component {
               />
               <Menu.Item
                 name="About Us"
-                style={
-                  this.state.activeButton === 'Us'
-                    ? { fontWeight: 'bold', color: 'white' }
-                    : { fontWeight: '', color: 'white' }
-                }
+                style={{
+                  color: 'white',
+                  fontWeight: this.state.activeButton === 'Us' ? 'bold' : '',
+                }}
                 onClick={() => {
                   this.setState({ activeButton: 'Us' });
                   history.push('/about-us');
@@ -87,14 +84,14 @@ class DesktopContainer extends Component {
               />
               <Menu.Item
                 name="Contact"
-                style={
-                  this.state.activeButton === 'Contact'
-                    ? { fontWeight: 'bold', color: 'white' }
-                    : { fontWeight: '', color: 'white' }
-                }
+                style={{
+                  color: 'white',
+                  fontWeight:
+                    this.state.activeButton === 'Contact' ? 'bold' : '',
+                }}
                 onClick={() => {
                   this.setState({ activeButton: 'OurTeam' });
-                  history.push('/our-team');
+                  history.push('/contact');
                 }}
               />
             </Menu.Menu>
@@ -116,6 +113,7 @@ class MobileContainer extends Component {
     super(props);
     this.state = {
       sidebarOpened: false,
+      activeButton: 'Home',
     };
   }
 
@@ -126,6 +124,7 @@ class MobileContainer extends Component {
   render() {
     const { children } = this.props;
     const { sidebarOpened } = this.state;
+    const { activeButton } = this.state;
 
     return (
       <Responsive
@@ -141,16 +140,48 @@ class MobileContainer extends Component {
           inverted
           style={{ backgroundColor: '#0f1325' }}
         >
-          <Menu.Item as="a" active style={{ color: 'white' }}>
+          <Menu.Item
+            as="a"
+            active={activeButton === 'Home'}
+            style={{ color: 'white' }}
+            onClick={() => {
+              this.setState({ activeButton: 'Home' });
+              history.push('/');
+            }}
+          >
             Home
           </Menu.Item>
-          <Menu.Item as="a" style={{ color: 'white' }}>
+          <Menu.Item
+            as="a"
+            active={activeButton === 'Team'}
+            style={{ color: 'white' }}
+            onClick={() => {
+              this.setState({ activeButton: 'Team' });
+              history.push('/team');
+            }}
+          >
             Meet the Team
           </Menu.Item>
-          <Menu.Item as="a" style={{ color: 'white' }}>
+          <Menu.Item
+            as="a"
+            active={activeButton === 'Us'}
+            style={{ color: 'white' }}
+            onClick={() => {
+              this.setState({ activeButton: 'Us' });
+              history.push('/about-us');
+            }}
+          >
             About Us
           </Menu.Item>
-          <Menu.Item as="a" style={{ color: 'white' }}>
+          <Menu.Item
+            as="a"
+            active={activeButton === 'Contact'}
+            style={{ color: 'white' }}
+            onClick={() => {
+              this.setState({ activeButton: 'Contact' });
+              history.push('/contact');
+            }}
+          >
             Contact
           </Menu.Item>
         </Sidebar>

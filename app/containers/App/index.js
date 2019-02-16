@@ -10,8 +10,8 @@
 import React, { Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import HomePage from 'containers/HomePage';
-import MeetTheTeam from 'containers/MeetTheTeam';
+import HomePage from 'containers/HomePage/Loadable';
+import MeetTheTeam from 'containers/MeetTheTeam/Loadable';
 import AboutUs from 'containers/AboutUs/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 

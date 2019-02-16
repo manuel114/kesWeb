@@ -1,22 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'rebass';
-import { StyledText, CardComponent, CustomSlider } from '../../../components';
+import { StyledText, CardComponent, Slider } from '../../../components';
 
 const manuelImage = require('../../../images/manuel.png');
 const markImage = require('../../../images/mark.png');
 
 const StyledContainer = styled.div`
   min-height: 700px;
-  padding: 5em 0 1em 0;
+  padding: 2em 0 1em 0;
   background-color: #f7f7f7;
-  margin-top: 130px;
+  margin-top: 9%;
+
+  /* Tablets */
+  @media (min-width: 768px) and (max-width: 1280px) {
+    margin-top: 12vh;
+    min-height: 50vw;
+  }
 `;
 
 const LineDiv = styled.div`
   border-top: 1px solid #ccc;
   width: 30vw;
   height: 0;
+`;
+
+const ResponsiveAboutUsFlex = styled.div`
+  display: flex;
+
+  /* Phones */
+  @media only screen and (max-width: 414px) and (max-height: 830px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const StyledTextBox = styled(Box)({});
@@ -30,7 +46,7 @@ const ContentOne = () => (
       </StyledText>
       <LineDiv style={{ float: 'right' }} />
     </Flex>
-    <Flex>
+    <ResponsiveAboutUsFlex>
       <StyledTextBox
         width={[1, 0.7]}
         ml={['5%', '10%', '10%']}
@@ -57,14 +73,14 @@ const ContentOne = () => (
           at King’s with each other and to corporate partners.
         </StyledText>
       </StyledTextBox>
-      <CustomSlider
+      <Slider
         cardsToShow="1"
         autoSlide="4000"
-        infinite
         showArrows="false"
-        width={[0, 0.3]}
+        width={[0.7, 0.3]}
         mr={['5%', '11%', '11%']}
         ml={['1%']}
+        mt={['8%', 0]}
       >
         <CardComponent
           image={manuelImage}
@@ -80,8 +96,8 @@ const ContentOne = () => (
           mail="president@kingsentrepreneurs.com"
           linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
         />
-      </CustomSlider>
-    </Flex>
+      </Slider>
+    </ResponsiveAboutUsFlex>
   </StyledContainer>
 );
 

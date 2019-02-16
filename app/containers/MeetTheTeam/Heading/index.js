@@ -17,9 +17,6 @@ const Heading = () => (
         <StyledText size="1.5" align="center" color="white" mb="10px" header>
           Meet the Team
         </StyledText>
-        <StyledText size="0.6" color="white">
-          2018 - 2019 Committee
-        </StyledText>
       </StyledCTA>
     </Box>
   </StyledHeaderContainer>

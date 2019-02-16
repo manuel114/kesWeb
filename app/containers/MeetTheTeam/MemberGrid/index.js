@@ -43,154 +43,156 @@ const MemberGrid = () => (
       </StyledText>
       <LineDiv style={{ float: 'right' }} />
     </Flex>
-    <Flex justifyContent="space-evenly" width={(0.8, 0.7, 0.8)} m="0 auto">
+    <Flex justifyContent="space-evenly" width={[0.9, 0.9, 0.8]} m="0 auto">
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={keyvanImage}
         title="Keyvan Amirghassemi"
         description="Vice-president"
         mail="keyvan@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/manuel-martinez-chamorro/"
-        style={{ dislay: 'flex !important', flex: 1 }}
+        linkedin="https://www.linkedin.com/in/keyvan-amirghassemi-739998151/"
       />
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={arinaImage}
         title="Arina Bykova"
         description="Head of Event"
         mail="arina@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
-        style={{ margin: '0 !important' }}
+        linkedin="https://www.linkedin.com/in/arina-bykova-868037150/"
       />
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={joeImage}
         title="Joe Chen"
         description="C.Relations Associate"
         mail="joe@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
-        style={{ margin: '0 !important' }}
+        linkedin="https://www.linkedin.com/in/chi-yu-chen/"
       />
     </Flex>
-    <Flex justifyContent="space-evenly" width={(0.8, 0.7, 0.8)} m="5% auto">
+    <Flex justifyContent="space-evenly" width={[0.9, 0.9, 0.8]} m="5% auto">
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={hugoImage}
         title="Hugo Debaig"
         description="Head of Marketing"
         mail="hugo@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/manuel-martinez-chamorro/"
-        style={{ dislay: 'flex !important', flex: 1 }}
+        linkedin="https://www.linkedin.com/in/hugodebaig/"
       />
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={omamerhiImage}
         title="Omamerhi Etefia"
         description="Events Associate"
         mail="omamerhi@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
-        style={{ margin: '0 !important' }}
+        linkedin="https://www.linkedin.com/in/omamerhi-etefia-3a5346147/"
       />
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={riyaImage}
         title="Riya Juneja"
         description="Head of C.Relations"
         mail="riya@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
-        style={{ margin: '0 !important' }}
+        linkedin="https://www.linkedin.com/in/riya-juneja-7b9871133/"
       />
     </Flex>
-    <Flex justifyContent="space-evenly" width={(0.8, 0.7, 0.8)} m="5% auto">
+    <Flex justifyContent="space-evenly" width={[0.9, 0.9, 0.8]} m="5% auto">
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={woozooImage}
         title="Woozoo Kim"
         description="C.Relations Associate"
         mail="woozoo@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/manuel-martinez-chamorro/"
-        style={{ dislay: 'flex !important', flex: 1 }}
+        linkedin="https://www.linkedin.com/in/woozoo/"
       />
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={ninosImage}
         title="Ninos Lado"
         description="IT Associate"
         mail="ninos@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
-        style={{ margin: '0 !important' }}
+        linkedin="https://www.linkedin.com/in/ninos-lahdo-24a673159/"
       />
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={mathieuImage}
         title="Mathieu Laing"
         description="C.Relations Associate"
         mail="riya@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
-        style={{ margin: '0 !important' }}
+        linkedin="https://www.linkedin.com/in/unavailable/"
       />
     </Flex>
-    <Flex justifyContent="space-evenly" width={(0.8, 0.7, 0.8)} m="5% auto">
+    <Flex justifyContent="space-evenly" width={[0.9, 0.9, 0.8]} m="5% auto">
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={manuelImage}
-        title="Mark Ng"
+        title="Manuel Martinez"
         description="Co-President"
         mail="president@kingsentrepreneurs.com"
         linkedin="https://www.linkedin.com/in/manuel-martinez-chamorro/"
-        style={{ dislay: 'flex !important', flex: 1 }}
       />
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={stefanieImage}
-        title="Aurore Pasquet"
+        title="Stefanie Mulder"
         description="Marketing Associate"
         mail="aurore@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
-        style={{ margin: '0 !important' }}
+        linkedin="https://www.linkedin.com/in/stefaniemulder/"
       />
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={vaishnaviImage}
-        title="Ben Pugh"
+        title="Vaishnavi Nagaraj"
         description="Chairwoman"
         mail="ben@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
-        style={{ margin: '0 !important' }}
+        linkedin="https://www.linkedin.com/in/vaishnavinagaraj/"
       />
     </Flex>
-    <Flex justifyContent="space-evenly" width={(0.8, 0.7, 0.8)} m="5% auto">
+    <Flex justifyContent="space-evenly" width={[0.9, 0.9, 0.8]} m="5% auto">
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={markImage}
         title="Mark Ng"
         description="Co-President"
         mail="mark@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/manuel-martinez-chamorro/"
-        style={{ dislay: 'flex !important', flex: 1 }}
+        linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
       />
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={auroreImage}
         title="Aurore Pasquet"
         description="Events Associate"
         mail="aurore@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
-        style={{ margin: '0 !important' }}
+        linkedin="https://www.linkedin.com/in/aurore-pasquet-65b365173/"
       />
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={benImage}
         title="Ben Pugh"
         description="IT Associate"
         mail="ben@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
-        style={{ margin: '0 !important' }}
+        linkedin="https://www.linkedin.com/in/ben-pugh/"
       />
     </Flex>
-    <Flex justifyContent="space-evenly" width={(0.8, 0.7, 0.8)} m="5% auto">
+    <Flex justifyContent="space-evenly" width={[0.9, 0.9, 0.8]} m="5% auto">
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={lucabrandoImage}
         title="Lucabrando Sanfilippo"
         description="Marketing Associate"
         mail="lucabrando@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/manuel-martinez-chamorro/"
-        style={{ dislay: 'flex !important', flex: 1 }}
+        linkedin="https://www.linkedin.com/in/lucabrandosanfilippo/"
       />
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         image={aliciaImage}
         title="Alicia Sing"
         description="Treasurer"
         mail="alicia@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
+        linkedin="https://www.linkedin.com/in/alicia-s-810653128/"
       />
 
       <CardComponent
+        width={[0.3, 0.3, 'auto']}
         title="You?"
         description="Check back soon for openings!"
         bgColor="#111226"
