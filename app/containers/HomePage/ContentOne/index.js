@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, Box } from 'rebass';
-import { StyledText, CardComponent, CustomSlider } from '../../../components';
+import { StyledText, CardComponent, Slider } from '../../../components';
 
 const manuelImage = require('../../../images/manuel.png');
 const markImage = require('../../../images/mark.png');
@@ -56,7 +56,7 @@ const ContentOne = () => (
           at King’s with each other and to corporate partners.
         </StyledText>
       </StyledTextBox>
-      <CustomSlider
+      <Slider
         cardsToShow="1"
         autoSlide="4000"
         infinite
@@ -79,7 +79,7 @@ const ContentOne = () => (
           mail="president@kingsentrepreneurs.com"
           linkedin="https://www.linkedin.com/in/mark-ng-13099412b/"
         />
-      </CustomSlider>
+      </Slider>
     </Flex>
   </StyledContainer>
 );

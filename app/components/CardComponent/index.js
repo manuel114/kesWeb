@@ -3,13 +3,14 @@ import { Card, Image, Icon } from 'semantic-ui-react';
 import { Flex } from 'rebass';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import StyledText from '../StyledText';
 
 const StyledCard = styled(Card)({
   height: '100%',
 });
 
 const CardComponent = props => (
-  <Flex justifyContent="center">
+  <Flex justifyContent="center" {...props}>
     <StyledCard style={{ background: props.bgColor ? props.bgColor : '' }}>
       <Image src={props.image} size="huge" />
       <Card.Content
@@ -18,8 +19,14 @@ const CardComponent = props => (
           border: props.image ? 'auto' : 'none',
         }}
       >
-        <Card.Header style={{ color: props.bgColor ? '#fffff6' : '' }}>
-          {props.title}
+        <Card.Header>
+          <StyledText
+            align="left"
+            size="1"
+            style={{ color: props.bgColor ? '#fffff6' : '' }}
+          >
+            {props.title}
+          </StyledText>
         </Card.Header>
         <Card.Meta>
           <span>{props.meta}</span>
