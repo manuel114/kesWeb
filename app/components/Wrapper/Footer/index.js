@@ -1,62 +1,76 @@
 import React from 'react';
-import { Icon, Divider } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 import { Box, Flex } from 'rebass';
+import styled from 'styled-components';
 import StyledText from '../../StyledText';
 
+const ResponsiveFooter = styled.div`
+  display: flex;
+  justify-content: space-between;
+  background-color: #0f1226;
+  padding: 5vh 8%;
+
+  /* Phones */
+  @media only screen and (max-width: 414px) and (max-height: 830px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
 const Footer = () => (
-  <Flex
-    justifyContent="center"
-    alignItems="stretch"
-    p="2%"
-    flexDirection="column"
-    bg="#005B9A"
-    color="white"
-  >
-    <Flex alignItems="center" flexWrap="wrap" justifyContent="center">
-      <Flex width={[1, 0.33]} mb={[3, 0]} justifyContent="center">
-        <StyledText size="1.8" align="center" color="white" dontResize>
-          Privasee
+  <ResponsiveFooter>
+    <Flex flexDirection="column" color="white">
+      <Box>
+        <StyledText header size="1.8" color="white" align="left">
+          Thank you for visiting
         </StyledText>
+      </Box>
+      <Box mt="2vw">
+        King&apos;s Entrepreneurs Society is a society of{' '}
+        <a
+          href="https://www.kcl.ac.uk/index.aspx"
+          style={{ color: 'white', textDecoration: 'underline' }}
+        >
+          King&apos;s College London
+        </a>
+        .
+      </Box>
+      <Box mt="1.5vw">
+        © King&apos;s Entrepreneurs Society. Website by Ben Pugh and Manuel
+        Martínez.
+      </Box>
+    </Flex>
+    <Flex flexDirection="row" color="white" width={[1, 0.4]} mt={['6vw', 0]}>
+      <Flex flexDirection="column" width={[0.3]}>
+        <Box>Find Us On:</Box>
+        <Box mt={['3vw', '2vw']}>Address:</Box>
+        <Box mt={['11vw', '2.8vw']}>Mail:</Box>
       </Flex>
-      <Flex
-        width={[1, 0.33]}
-        mb={[3, 0]}
-        justifyContent="center"
-        style={{ textAlign: 'center' }}
-      >
-        <Box m="auto" width={[1, 0.25]} css={{ textAlign: 'center' }}>
-          Product
+      <Flex flexDirection="column">
+        <Flex justifyContent="flex-start">
+          <Icon
+            name="facebook"
+            size="big"
+            style={{ margin: '0px 10px 0px 0px' }}
+          />
+          <Icon name="twitter" size="big" />
+          <Icon name="linkedin" size="big" />
+        </Flex>
+        <Box mt={['1.5vw']}>
+          King&apos;s College London
+          <br /> Strand, London <br /> WC2R 2LS
         </Box>
-        <Box m="auto" width={[1, 0.25]} css={{ textAlign: 'center' }}>
-          Company
-        </Box>
-        <Box m="auto" width={[1, 0.25]} css={{ textAlign: 'center' }}>
-          Support
-        </Box>
-      </Flex>
-      <Flex
-        width={[0.5, 0.33]}
-        mb={[3, 0]}
-        alignSelf="center"
-        justifyContent="center"
-        alignItems="center"
-      >
-        <Box width={[1, 0.15]} css={{ textAlign: 'center' }}>
-          <Icon fitted name="facebook official" size="large" />
-        </Box>
-        <Box width={[1, 0.15]} css={{ textAlign: 'center' }}>
-          <Icon fitted name="twitter" size="large" />
-        </Box>
-        <Box width={[1, 0.15]} css={{ textAlign: 'center' }}>
-          <Icon fitted name="instagram" size="large" />
+        <Box>
+          <a
+            href="mailto:general@kingsentrepreneurs.com"
+            style={{ color: 'white', textDecoration: 'underline' }}
+          >
+            general@kingsentrepreneurs.com
+          </a>
         </Box>
       </Flex>
     </Flex>
-    <Divider style={{ width: '90%' }} />
-    <Box m="auto" mb={[2, 0]} css={{ textAlign: 'center' }}>
-      © 2018 Privasee Group ltd. <br /> All rights reserved
-    </Box>
-  </Flex>
+  </ResponsiveFooter>
 );
 
 export default Footer;

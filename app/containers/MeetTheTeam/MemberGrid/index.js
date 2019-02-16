@@ -118,7 +118,7 @@ const MemberGrid = () => (
         title="Mathieu Laing"
         description="C.Relations Associate"
         mail="riya@kingsentrepreneurs.com"
-        linkedin="https://www.linkedin.com/in/unavailable/"
+        linkedin="https://www.linkedin.com/in/matthieu-laing-218973a0/"
       />
     </Flex>
     <Flex justifyContent="space-evenly" width={[0.9, 0.9, 0.8]} m="5% auto">
