@@ -11,6 +11,7 @@ import {
 
 const backgroundVideo = require('../../../images/background.mp4');
 
+// Heading begins here
 const Heading = () => (
   <StyledHeaderContainer>
     <Box m="0" width={[1]}>

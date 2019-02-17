@@ -4,6 +4,7 @@ import { Box, Flex } from 'rebass';
 import styled from 'styled-components';
 import StyledText from '../../StyledText';
 
+// Components with custom style
 const ResponsiveFooter = styled.div`
   display: flex;
   justify-content: space-between;
@@ -17,6 +18,7 @@ const ResponsiveFooter = styled.div`
   }
 `;
 
+// Footer starts here
 const Footer = () => (
   <ResponsiveFooter>
     <Flex flexDirection="column" color="white">

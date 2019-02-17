@@ -16,6 +16,7 @@ import history from '../../utils/history';
 const logo = require('../../images/logo.png');
 
 /* eslint-disable react/prefer-stateless-function, react/no-multi-comp */
+// Container for PC with Menu and Footer
 class DesktopContainer extends Component {
   constructor(props) {
     super(props);
@@ -97,6 +98,7 @@ class DesktopContainer extends Component {
             </Menu.Menu>
           </Menu>
         </Visibility>
+        {/* Anything inside of Wrapper will be passed as children */}
         {children}
         <Footer />
       </Responsive>
@@ -104,10 +106,12 @@ class DesktopContainer extends Component {
   }
 }
 
+// Checks the type of props it gets
 DesktopContainer.propTypes = {
   children: PropTypes.node,
 };
 
+// Continer for mobile with Menu and Footer
 class MobileContainer extends Component {
   constructor(props) {
     super(props);
@@ -131,6 +135,7 @@ class MobileContainer extends Component {
         as={Sidebar.Pushable}
         maxWidth={Responsive.onlyMobile.maxWidth}
       >
+        {/* Menu that appears when clicked on menu button */}
         <Sidebar
           as={Menu}
           animation="push"
@@ -197,8 +202,10 @@ class MobileContainer extends Component {
             }}
             vertical
           >
+            {/* What is displayed when menu is hidden */}
             <Container>
               <Menu pointing secondary size="large" style={{ border: 'none' }}>
+                {/* Menu icon */}
                 <Menu.Item onClick={this.handleToggle}>
                   <Icon
                     name="sidebar"
@@ -206,6 +213,7 @@ class MobileContainer extends Component {
                     size="large"
                   />
                 </Menu.Item>
+                {/* KES Logo */}
                 <Menu.Item
                   style={{
                     marginLeft: '4.5vw',
@@ -218,6 +226,7 @@ class MobileContainer extends Component {
               </Menu>
             </Container>
           </Segment>
+          {/* Anything inside of Wrapper will be passed as children */}
           {children}
           <Footer />
         </Sidebar.Pusher>

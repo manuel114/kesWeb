@@ -6,6 +6,7 @@ import { StyledText, CardComponent, Slider } from '../../../components';
 const manuelImage = require('../../../images/manuel.png');
 const markImage = require('../../../images/mark.png');
 
+// Components with custom style
 const StyledContainer = styled.div`
   min-height: 700px;
   padding: 2em 0 1em 0;
@@ -35,10 +36,13 @@ const ResponsiveAboutUsFlex = styled.div`
   }
 `;
 
+// This is so we can use the props of Box
 const StyledTextBox = styled(Box)({});
 
-const ContentOne = () => (
+// PresidentialGreeting starts here
+const PresidentialGreeting = () => (
   <StyledContainer vertical style={{ width: '100%' }}>
+    {/* Section Title */}
     <Flex justifyContent="center" alignItems="center" w={['100%']} mb="3%">
       <LineDiv style={{ float: 'left' }} />
       <StyledText size="2.5" header align="center" m="0 1%">
@@ -46,6 +50,7 @@ const ContentOne = () => (
       </StyledText>
       <LineDiv style={{ float: 'right' }} />
     </Flex>
+    {/* Content */}
     <ResponsiveAboutUsFlex>
       <StyledTextBox
         width={[1, 0.7]}
@@ -101,4 +106,4 @@ const ContentOne = () => (
   </StyledContainer>
 );
 
-export default ContentOne;
+export default PresidentialGreeting;

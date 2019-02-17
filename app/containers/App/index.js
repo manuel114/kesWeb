@@ -23,6 +23,7 @@ import 'semantic-ui-css/semantic.min.css';
 export default function App() {
   return (
     <Suspense fallback="Loading...">
+      {/* Wrapper adds Header and Footer to all pages */}
       <Wrapper>
         <Switch>
           <Route exact path="/" component={HomePage} />

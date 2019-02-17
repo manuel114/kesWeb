@@ -15,6 +15,9 @@ import DefaultDotsWrapper from './DotsWrapper';
 import DefaultDot from './Dot';
 import Timer from './utils/Timer';
 
+// Slider starts here
+// Component that takes elements and puts them in a Slider
+// for more info: https://github.com/ItsMrAkhil/react-styled-carousel
 class Slider extends React.Component {
   constructor(props) {
     super(props);

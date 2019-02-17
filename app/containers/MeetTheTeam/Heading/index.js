@@ -9,6 +9,7 @@ import {
 
 const committeeFun = require('../../../images/Committee_fun.jpg');
 
+// Heading begins here
 const Heading = () => (
   <StyledHeaderContainer>
     <Box m="0" width={[1]}>

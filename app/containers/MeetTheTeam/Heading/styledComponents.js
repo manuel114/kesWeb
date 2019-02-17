@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Box } from 'rebass';
 
+// Components with custom style
 const StyledHeaderContainer = styled.div`
   position: relative;
   width: 100%;
