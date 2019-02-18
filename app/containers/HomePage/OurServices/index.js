@@ -11,6 +11,12 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  /* Phones */
+  @media only screen and (max-width: 414px) and (max-height: 830px) {
+    padding-top: 3em;
+    min-height: 300px;
+  }
 `;
 
 const LineDiv = styled.div`
@@ -25,7 +31,7 @@ const OurServices = () => (
     {/* Section Title */}
     <Flex justifyContent="center" alignItems="center" w={['100%']} mb="3%">
       <LineDiv style={{ float: 'left' }} />
-      <Box width={[0.3]}>
+      <Box width={[0.5, 0.3]}>
         <StyledText size="2.5" header align="center" m="0">
           Our Services
         </StyledText>
@@ -33,7 +39,7 @@ const OurServices = () => (
       <LineDiv style={{ float: 'right' }} />
     </Flex>
     {/* Content */}
-    <Flex width={[0.6]} justifyContent="space-evenly">
+    <Flex width={[0.95, 0.6]} justifyContent="space-evenly">
       <CardComponent
         width={[0.3]}
         iconName="briefcase"

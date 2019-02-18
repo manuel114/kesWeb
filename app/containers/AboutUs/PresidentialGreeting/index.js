@@ -13,6 +13,11 @@ const StyledContainer = styled.div`
   background-color: #f7f7f7;
   margin-top: 9%;
 
+  /* Phones */
+  @media only screen and (max-width: 414px) and (max-height: 830px) {
+    margin-top: 0%;
+  }
+
   /* Tablets */
   @media (min-width: 768px) and (max-width: 1280px) {
     margin-top: 12vh;

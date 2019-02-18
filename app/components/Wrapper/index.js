@@ -83,18 +83,6 @@ class DesktopContainer extends Component {
                   history.push('/about-us');
                 }}
               />
-              <Menu.Item
-                name="Contact"
-                style={{
-                  color: 'white',
-                  fontWeight:
-                    this.state.activeButton === 'Contact' ? 'bold' : '',
-                }}
-                onClick={() => {
-                  this.setState({ activeButton: 'OurTeam' });
-                  history.push('/contact');
-                }}
-              />
             </Menu.Menu>
           </Menu>
         </Visibility>
@@ -177,17 +165,6 @@ class MobileContainer extends Component {
             }}
           >
             About Us
-          </Menu.Item>
-          <Menu.Item
-            as="a"
-            active={activeButton === 'Contact'}
-            style={{ color: 'white' }}
-            onClick={() => {
-              this.setState({ activeButton: 'Contact' });
-              history.push('/contact');
-            }}
-          >
-            Contact
           </Menu.Item>
         </Sidebar>
 

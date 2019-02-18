@@ -71,9 +71,9 @@ const Events = () => {
       // Only 3 first events are shown
       if (i < 3) {
         return (
-          <Box width={[0.3]} p={[3]}>
+          <Box width={[0.9, 0.3]} p={[3]}>
             <CardComponent
-              width={[0.3, 0.3, 1]}
+              width={[1]}
               image={event.logo.url}
               textAlign="center"
               title={event.name.text}
@@ -81,7 +81,7 @@ const Events = () => {
                 .split(' ', 30) // Takes the first 30 words
                 .join(' ')}...`} // Adds a space between each word and ... at the end
               bgColor="#111226"
-              style={{ height: '350px' }}
+              style={{ height: '105%' }}
             />
           </Box>
         );
@@ -102,9 +102,9 @@ const Events = () => {
       // Only 6 first events are shown
       if (i < 6) {
         return (
-          <Box width={[0.3]} p={[3]}>
+          <Box width={[0.9, 0.3]} p={[3]}>
             <CardComponent
-              width={[0.3, 0.3, 1]}
+              width={[1]}
               image={event.logo.url}
               textAlign="center"
               title={event.name.text}
@@ -112,7 +112,9 @@ const Events = () => {
                 .split(' ', 30) // Takes the first 30 words
                 .join(' ')}...`} // Adds a space between each word and ... at the end
               bgColor="#111226"
-              style={{ height: '350px' }}
+              style={{
+                height: '105%',
+              }}
             />
           </Box>
         );
