@@ -48,7 +48,7 @@ const Events = () => {
     // API call
     const newUpcomingEvents = await axios
       .get(
-        'https://www.eventbriteapi.com/v3/organizations/231512334091/events/?order_by=start_desc&status=started&token=E4IMXW4G4DUQXJZWVNY3',
+        'https://www.eventbriteapi.com/v3/organizations/231512334091/events/?status=live&token=E4IMXW4G4DUQXJZWVNY3',
       )
       .catch(e => console.log(e));
 
